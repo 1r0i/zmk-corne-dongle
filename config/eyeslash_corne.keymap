@@ -29,7 +29,7 @@
     tapping-term-ms = <250>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
-    flavor = "tap-unless-interrupted";
+    flavor = "balanced";
 };
 
 / {
