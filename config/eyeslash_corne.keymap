@@ -91,6 +91,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
         };
+
+        scroll_encoder1: scroll_encoder1 {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+            label = "SCROLL_ENCODER1";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -115,6 +124,17 @@
             key-positions = <43 46>;
             layers = <0>;
         };
+
+        game_layer_on {
+            bindings = <&tog 6>;
+            key-positions = <24 25>;
+            layers = <0>;
+        };
+
+        game_layer_off {
+            bindings = <&tog 6>;
+            key-positions = <44 45>;
+        };
     };
 
     keymap {
@@ -129,7 +149,7 @@
                                &kp LCTRL    &sk RSHFT    &lt_del_tab 1 0                                                  &lt 2 TAB  &kp SPACE    &kp ESC
             >;
 
-            sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
+            sensor-bindings = <&scroll_encoder1>, <&rsr_trans>;
         };
 
         lower_layer {
@@ -141,7 +161,7 @@
                                    &trans               &trans              &trans                                     &trans       &trans              &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
+            sensor-bindings = <&scroll_encoder1>, <&rsr_trans>;
         };
 
         raise_layer {
@@ -153,7 +173,7 @@
                                          &trans             &trans          &trans                                           &trans            &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
+            sensor-bindings = <&scroll_encoder1>, <&rsr_trans>;
         };
 
         layer_3 {
@@ -165,7 +185,7 @@
                           &trans     &trans     &trans                                        &kp DELETE     &trans           &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
+            sensor-bindings = <&scroll_encoder1>, <&rsr_trans>;
         };
 
         layer_4 {
@@ -176,7 +196,7 @@
                                  &trans          &trans           &kp DELETE                                       &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder1>;
         };
 
         layer_5 {
@@ -187,16 +207,29 @@
                                 &trans          &mkp MB1         &mkp MB2                                    &trans  &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_encoder1>;
         };
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T                            &kp UP               &kp Y     &kp U     &kp I      &kp O    &kp P     &kp ESC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G                  &kp LEFT  &kp RET   &kp RIGHT  &kp H     &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B  &kp CAPSLOCK              &kp DOWN             &kp N     &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LALT  &kp SPACE  &mo 7                                                 &kp RBKT  &kp BSPC  &kp ESC
             >;
+
+            sensor-bindings = <&scroll_encoder1>;
+        };
+
+        layer_7 {
+            bindings = <
+&kp GRAVE  &trans        &trans        &trans        &trans        &trans                    &trans          &trans        &trans        &trans        &trans        &trans        &trans
+&trans     &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
+&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans            &trans          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+                                       &trans        &trans        &trans                                    &trans        &trans        &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder1>;
         };
     };
 };
