@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - CUT
+  - Ctl+X
   - Y
   - U
   - I
@@ -22,7 +22,7 @@ layers:
   - G
   - Ctl+Z
   - $$mdi:apple-keyboard-caps$$
-  - PASTE
+  - Ctl+V
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
@@ -36,7 +36,7 @@ layers:
   - V
   - B
   - '&mkp MB3'
-  - COPY
+  - Ctl+C
   - N
   - M
   - {t: ',', s: '"'}
