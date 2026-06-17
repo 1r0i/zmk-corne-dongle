@@ -21,7 +21,7 @@ layers:
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - A
   - $$mdi:arrow-right-bold$$
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
