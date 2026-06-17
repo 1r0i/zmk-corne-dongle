@@ -72,6 +72,52 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        del_tab: del_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DEL_TAB";
+            bindings = <&kp DELETE>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        lt_del_tab: lt_del_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_DEL_TAB";
+            bindings = <&mo>, <&del_tab>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+        };
+
+        left_tab: left_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_TAB";
+            bindings = <&mkp MB4>, <&kp LS(TAB)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        right_tab: right_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_TAB";
+            bindings = <&mkp MB5>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        caps_word: caps_word {
+            compatible = "zmk,behavior-caps-word";
+            label = "CAPS_WORD";
+            #binding-cells = <0>;
+            continue-list = <A>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -104,10 +150,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&mt LGUI CAPSLOCK  &kp Q  &kp W       &kp E        &kp R        &kp T                               &kp UP               &kp Y      &kp U        &kp I         &kp O       &kp P     &mt LGUI DELETE
-&kp BSPC           &kp A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G                     &kp LEFT  &kp A     &kp RIGHT  &kp H      &mt LCTRL J  &mt LSHFT K   &mt LALT L  &lt 3 B   &kp BSPC
-&kp TAB            &kp Z  &kp X       &kp C        &kp V        &kp B         &mkp MB3              &kp DOWN             &kp N      &kp M        &comma_quote  &dot_quote  &kp FSLH  &kp ENTER
-                                      &kp LCTRL    &sk RSHIFT   &lt 1 DELETE                                             &lt 4 TAB  &lt 2 SPACE  &kp ESC
+&caps_word  &kp Q    &kp W       &kp E        &kp R        &kp T                                   &kp UP                &kp Y      &kp U        &kp I         &kp O       &kp P     &kp DELETE
+&kp BSPC    &lt 5 A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G                        &left_tab  &kp LALT  &right_tab  &kp H      &mt LCTRL J  &mt LSHFT K   &mt LALT L  &lt 3 B   &kp BSPC
+&kp LGUI    &kp Z    &kp X       &kp C        &kp V        &kp B            &mkp MB3               &kp DOWN              &kp N      &kp M        &comma_quote  &dot_quote  &kp FSLH  &kp ENTER
+                                 &kp LCTRL    &sk RSHIFT   &lt_del_tab 1 0                                               &lt 0 TAB  &lt 2 SPACE  &kp ESC
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -119,7 +165,7 @@
 &trans  &kp F1  &kp F2             &kp F3               &kp F4              &kp F5                     &trans          &kp PERCENT  &kp MINUS           &kp EQUAL            &kp PLUS           &kp ASTERISK  &trans
 &trans  &kp N1  &mt LALT NUMBER_2  &mt LSHIFT NUMBER_3  &mt LCTRL NUMBER_4  &kp N5             &trans  &trans  &trans  &kp N6       &mt LCTRL NUMBER_7  &mt LSHIFT NUMBER_8  &mt LALT NUMBER_9  &kp N0        &trans
 &trans  &kp F6  &kp F7             &kp F8               &kp F9              &kp F10  &trans            &trans          &kp F11      &kp F12             &trans               &trans             &trans        &trans
-                                   &trans               &trans              &mo 4                                      &mo 4        &trans              &trans
+                                   &trans               &trans              &trans                                     &trans       &trans              &trans
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -151,13 +197,24 @@
 
         layer_4 {
             bindings = <
-&trans  &studio_unlock  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &trans  &kp HOME         &kp UP          &kp END          &kp PAGE_UP                      &trans          &trans  &trans     &trans      &trans    &trans  &trans
+&trans  &trans  &kp LEFT         &kp DOWN        &kp RIGHT        &kp PAGE_DOWN            &trans  &trans  &trans  &trans  &kp LCTRL  &kp LSHIFT  &kp LALT  &trans  &trans
+&trans  &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INSERT     &trans            &trans          &trans  &trans     &trans      &trans    &trans  &trans
+                                 &trans          &trans           &kp DELETE                                       &trans  &trans     &trans
             >;
 
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &mkp MB5                    &trans          &trans  &trans     &trans      &trans    &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB4            &trans  &trans  &trans  &trans  &kp LCTRL  &kp LSHIFT  &kp LALT  &trans  &trans
+&trans  &trans  &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &trans    &trans            &trans          &trans  &trans     &trans      &trans    &trans  &trans
+                                &trans          &mkp MB1         &mkp MB2                                    &trans  &trans     &trans
+            >;
+
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
