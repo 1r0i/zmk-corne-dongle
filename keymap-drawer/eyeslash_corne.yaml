@@ -20,9 +20,9 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
-  - AC FORWARD
+  - $$mdi:pan-left$$
   - $$mdi:apple-keyboard-caps$$
-  - AC BACK
+  - $$mdi:pan-right$$
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
@@ -46,7 +46,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUMBER, s: '$$mdi:keyboard-tab$$'}
-  - {t: '$$mdi:keyboard-tab$$', h: QWERTY}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
   - $$mdi:keyboard-esc$$
   NUMBER:
