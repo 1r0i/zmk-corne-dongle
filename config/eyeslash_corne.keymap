@@ -88,6 +88,15 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        hangul {
+            bindings = <&kp RALT>;
+            key-positions = <43 46>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
