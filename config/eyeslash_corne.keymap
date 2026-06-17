@@ -94,6 +94,7 @@
         hangul {
             bindings = <&kp RALT>;
             key-positions = <43 46>;
+            layers = <0>;
         };
     };
 
@@ -103,10 +104,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&mt LGUI CAPSLOCK  &kp Q  &kp W  &kp E      &kp R       &kp T                             &kp UP               &kp Y      &kp U        &kp I      &kp O    &kp P     &mt LGUI DELETE
-&kp BSPC           &kp A  &kp S  &kp D      &kp F       &kp G                   &kp LEFT  &trans    &kp RIGHT  &kp H      &kp J        &kp K      &kp L    &kp SEMI  &kp BSPC
-&kp TAB            &kp Z  &kp X  &kp C      &kp V       &kp B         &trans              &kp DOWN             &kp N      &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
-                                 &kp LCTRL  &sk RSHIFT  &lt 1 DELETE                                           &lt 3 TAB  &lt 2 SPACE  &kp ESC
+&mt LGUI CAPSLOCK  &kp Q  &kp W       &kp E        &kp R        &kp T                             &kp UP               &kp Y      &kp U        &kp I        &kp O       &kp P     &mt LGUI DELETE
+&kp BSPC           &kp A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G                   &kp LEFT  &trans    &kp RIGHT  &kp H      &mt LCTRL J  &mt LSHFT K  &mt LALT L  &lt 3 B   &kp BSPC
+&kp TAB            &kp Z  &kp X       &kp C        &kp V        &kp B         &trans              &kp DOWN             &kp N      &kp M        &kp COMMA    &kp DOT     &kp FSLH  &kp ENTER
+                                      &kp LCTRL    &sk RSHIFT   &lt 1 DELETE                                           &lt 3 TAB  &lt 2 SPACE  &kp ESC
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
