@@ -124,7 +124,7 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB   &kp Q    &kp W       &kp E        &kp R        &kp T                                          &kp LG(L)                    &kp Y      &kp U        &kp I         &kp O       &kp P     &kp DELETE
-&kp BSPC  &lt 5 A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H      &mt LCTRL J  &mt LSHFT K   &mt LALT L  &lt 3 B   &kp BSPC
+&kp BSPC  &lt 4 A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H      &mt LCTRL J  &mt LSHFT K   &mt LALT L  &lt 3 B   &kp BSPC
 &kp LGUI  &kp Z    &kp X       &kp C        &kp V        &kp B            &mkp MB3                      &tog 6                       &kp N      &kp M        &comma_quote  &dot_quote  &kp FSLH  &kp ENTER
                                &kp LCTRL    &sk RSHFT    &lt_del_tab 1 0                                                             &lt 2 TAB  &kp SPACE    &kp ESC
             >;
