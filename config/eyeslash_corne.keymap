@@ -115,17 +115,6 @@
             key-positions = <43 46>;
             layers = <0>;
         };
-
-        game_layer_on {
-            bindings = <&tog 6>;
-            key-positions = <24 25>;
-            layers = <0>;
-        };
-
-        game_layer_off {
-            bindings = <&tog 6>;
-            key-positions = <44 45>;
-        };
     };
 
     keymap {
@@ -134,10 +123,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB   &kp Q    &kp W       &kp E        &kp R        &kp T                                       &kp LC(R)                     &kp Y      &kp U        &kp I         &kp O       &kp P     &kp DELETE
-&kp BSPC  &lt 5 A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G                        &kp K_FORWARD  &kp CAPSLOCK  &kp LC(K_BACK)  &kp H      &mt LCTRL J  &mt LSHFT K   &mt LALT L  &lt 3 B   &kp BSPC
-&kp LGUI  &kp Z    &kp X       &kp C        &kp V        &kp B            &mkp MB3                   &tog 6                        &kp N      &kp M        &comma_quote  &dot_quote  &kp FSLH  &kp ENTER
-                               &kp LCTRL    &sk RSHFT    &lt_del_tab 1 0                                                           &lt 2 TAB  &kp SPACE    &kp ESC
+&kp TAB   &kp Q    &kp W       &kp E        &kp R        &kp T                                          &kp LC(R)                    &kp Y      &kp U        &kp I         &kp O       &kp P     &kp DELETE
+&kp BSPC  &lt 5 A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H      &mt LCTRL J  &mt LSHFT K   &mt LALT L  &lt 3 B   &kp BSPC
+&kp LGUI  &kp Z    &kp X       &kp C        &kp V        &kp B            &mkp MB3                      &tog 6                       &kp N      &kp M        &comma_quote  &dot_quote  &kp FSLH  &kp ENTER
+                               &kp LCTRL    &sk RSHFT    &lt_del_tab 1 0                                                             &lt 2 TAB  &kp SPACE    &kp ESC
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -203,10 +192,10 @@
 
         layer_6 {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T                            &kp UP               &kp Y      &kp U     &kp I      &kp O    &kp P     &kp ESC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G                  &kp LEFT  &kp RET   &kp RIGHT  &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B  &kp CAPSLOCK              &kp DOWN             &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LALT  &kp SPACE  &mo 7                                                 &kp RSHFT  &kp BSPC  &kp ESC
+&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T                      &kp UP               &kp Y      &kp U     &kp I      &kp O    &kp P     &kp ESC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G            &kp LEFT  &kp RET   &kp RIGHT  &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B  &tog 6              &kp DOWN             &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LALT  &kp SPACE  &mo 7                                           &kp RSHFT  &kp BSPC  &kp ESC
             >;
 
             sensor-bindings = <&scroll_encoder>;
