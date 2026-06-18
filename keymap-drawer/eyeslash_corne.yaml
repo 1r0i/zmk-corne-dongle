@@ -20,9 +20,9 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
-  - FORWARD
+  - AC FORWARD
   - $$mdi:apple-keyboard-caps$$
-  - Ctl+BACK
+  - AC BACK
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
@@ -329,7 +329,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '6', h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -396,8 +396,3 @@ combos:
 - p: [43, 46]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
-- p: [24, 25]
-  k: {t: '6', h: toggle}
-  l: [QWERTY]
-- p: [44, 45]
-  k: {t: '6', h: toggle}
