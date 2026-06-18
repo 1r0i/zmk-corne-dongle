@@ -91,15 +91,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <250>;
         };
-
-        scroll_encoder1: scroll_encoder1 {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <20>;
-            label = "SCROLL_ENCODER1";
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -149,7 +140,9 @@
                                &kp LCTRL    &sk RSHFT    &lt_del_tab 1 0                                                           &lt 2 TAB  &kp SPACE    &kp ESC
             >;
 
-            sensor-bindings = <&scroll_encoder1>, <&rsr_trans>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&rsr_trans>;
         };
 
         lower_layer {
@@ -161,7 +154,7 @@
                                    &trans               &trans              &trans                                     &trans       &trans              &trans
             >;
 
-            sensor-bindings = <&scroll_encoder1>, <&rsr_trans>;
+            sensor-bindings = <&none>, <&rsr_trans>;
         };
 
         raise_layer {
@@ -173,7 +166,7 @@
                                          &trans             &trans          &trans                                           &trans            &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder1>, <&rsr_trans>;
+            sensor-bindings = <&none>, <&rsr_trans>;
         };
 
         layer_3 {
@@ -185,7 +178,7 @@
                           &trans     &trans     &trans                                        &kp DELETE     &trans           &trans
             >;
 
-            sensor-bindings = <&scroll_encoder1>, <&rsr_trans>;
+            sensor-bindings = <&none>, <&rsr_trans>;
         };
 
         layer_4 {
@@ -196,7 +189,7 @@
                                  &trans          &trans           &kp DELETE                                       &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder1>;
+            sensor-bindings = <&none>;
         };
 
         layer_5 {
@@ -207,7 +200,7 @@
                                 &trans          &mkp MB1         &mkp MB2                                    &trans  &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder1>;
+            sensor-bindings = <&none>;
         };
 
         layer_6 {
@@ -218,7 +211,7 @@
                          &kp LALT  &kp SPACE  &mo 7                                                 &kp RSHFT  &kp BSPC  &kp ESC
             >;
 
-            sensor-bindings = <&scroll_encoder1>;
+            sensor-bindings = <&none>;
         };
 
         layer_7 {
@@ -229,7 +222,7 @@
                                        &trans        &trans        &trans                                    &trans        &trans        &trans
             >;
 
-            sensor-bindings = <&scroll_encoder1>;
+            sensor-bindings = <&none>;
         };
     };
 };
