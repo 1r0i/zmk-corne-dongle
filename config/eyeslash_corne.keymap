@@ -123,7 +123,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB   &kp Q    &kp W       &kp E        &kp R        &kp T                                          &kp LC(R)                    &kp Y      &kp U        &kp I         &kp O       &kp P     &kp DELETE
+&kp TAB   &kp Q    &kp W       &kp E        &kp R        &kp T                                          &kp LG(L)                    &kp Y      &kp U        &kp I         &kp O       &kp P     &kp DELETE
 &kp BSPC  &lt 5 A  &mt LALT S  &mt LSHFT D  &mt LCTRL F  &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H      &mt LCTRL J  &mt LSHFT K   &mt LALT L  &lt 3 B   &kp BSPC
 &kp LGUI  &kp Z    &kp X       &kp C        &kp V        &kp B            &mkp MB3                      &tog 6                       &kp N      &kp M        &comma_quote  &dot_quote  &kp FSLH  &kp ENTER
                                &kp LCTRL    &sk RSHFT    &lt_del_tab 1 0                                                             &lt 2 TAB  &kp SPACE    &kp ESC
@@ -192,10 +192,10 @@
 
         layer_6 {
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R      &kp T                      &kp UP               &kp Y      &kp U     &kp I      &kp O    &kp P     &kp ESC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F      &kp G            &kp LEFT  &kp RET   &kp RIGHT  &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B  &tog 6              &kp DOWN             &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &kp LALT  &kp SPACE  &mo 7                                           &kp RSHFT  &kp BSPC  &kp ESC
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                          &kp UP               &kp Y          &kp U  &kp I      &kp O    &kp P     &kp ESC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G                &kp LEFT  &kp RET   &kp RIGHT  &kp H          &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &trans              &kp DOWN             &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &kp LALT  &mo 7  &kp SPACE                                           &kp BACKSPACE  &mo 7  &tog 6
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -203,9 +203,9 @@
 
         layer_7 {
             bindings = <
-&kp GRAVE  &trans        &trans        &trans        &trans        &trans                    &trans          &trans        &trans        &trans        &trans        &trans        &trans
-&trans     &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans        &trans
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans            &trans          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&kp GRAVE  &trans        &trans        &trans        &trans        &trans                    &trans          &trans        &trans        &kp UP        &trans        &trans        &trans
+&kp ESC    &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans        &trans
+&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans            &trans          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp ENTER
                                        &trans        &trans        &trans                                    &trans        &trans        &trans
             >;
 
