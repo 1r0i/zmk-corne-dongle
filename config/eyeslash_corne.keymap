@@ -140,7 +140,7 @@
 
         hangul {
             bindings = <&kp RALT>;
-            key-positions = <43 46>;
+            key-positions = <46 43>;
             layers = <0>;
         };
 
@@ -164,13 +164,13 @@
 
         r {
             bindings = <&kp RS(R)>;
-            key-positions = <4 15>;
+            key-positions = <4 14>;
             layers = <0>;
         };
 
         t {
             bindings = <&kp RS(T)>;
-            key-positions = <5 15>;
+            key-positions = <5 14>;
             layers = <0>;
         };
 
@@ -183,6 +183,30 @@
         p {
             bindings = <&kp LS(P)>;
             key-positions = <23 11>;
+            layers = <0>;
+        };
+
+        quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <24 39>;
+            layers = <0>;
+        };
+
+        double_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <38 25>;
+            layers = <0>;
+        };
+
+        question_mark {
+            bindings = <&kp QUESTION>;
+            key-positions = <23 40>;
+            layers = <0>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <37 26>;
             layers = <0>;
         };
     };
