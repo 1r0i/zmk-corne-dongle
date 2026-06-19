@@ -396,3 +396,24 @@ combos:
 - p: [43, 46]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
+- p: [1, 17]
+  k: Sft+Q
+  l: [QWERTY]
+- p: [2, 17]
+  k: Sft+W
+  l: [QWERTY]
+- p: [3, 17]
+  k: Sft+E
+  l: [QWERTY]
+- p: [4, 15]
+  k: Sft+R
+  l: [QWERTY]
+- p: [5, 15]
+  k: Sft+T
+  l: [QWERTY]
+- p: [23, 10]
+  k: Sft+O
+  l: [QWERTY]
+- p: [23, 11]
+  k: Sft+P
+  l: [QWERTY]
