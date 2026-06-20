@@ -396,36 +396,9 @@ combos:
 - p: [46, 43]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
-- p: [1, 17]
-  k: Sft+Q
-  l: [QWERTY]
-- p: [2, 17]
-  k: Sft+W
-  l: [QWERTY]
-- p: [3, 17]
-  k: Sft+E
-  l: [QWERTY]
-- p: [4, 14]
-  k: Sft+R
-  l: [QWERTY]
-- p: [5, 14]
-  k: Sft+T
-  l: [QWERTY]
-- p: [23, 10]
-  k: Sft+O
-  l: [QWERTY]
-- p: [23, 11]
-  k: Sft+P
-  l: [QWERTY]
-- p: [24, 39]
+- p: [24, 25]
   k: {t: '''', s: '"'}
   l: [QWERTY]
-- p: [38, 25]
+- p: [16, 15]
   k: '"'
-  l: [QWERTY]
-- p: [23, 40]
-  k: '?'
-  l: [QWERTY]
-- p: [37, 26]
-  k: '!'
   l: [QWERTY]
