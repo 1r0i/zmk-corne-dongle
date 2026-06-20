@@ -144,16 +144,87 @@
             layers = <0>;
         };
 
-        quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <24 25>;
-            layers = <0>;
+        left-ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <16 17>;
+            layers = <0 1>;
         };
 
-        double_quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <16 15>;
-            layers = <0>;
+        left-sft {
+            bindings = <&kp LSHIFT>;
+            key-positions = <15 16>;
+            layers = <0 1>;
+        };
+
+        left-alt {
+            bindings = <&kp LALT>;
+            key-positions = <14 15>;
+            layers = <0 1>;
+        };
+
+        left-CS {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <17 15>;
+            layers = <0 1>;
+        };
+
+        left-CA {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <14 17>;
+            layers = <0 1>;
+        };
+
+        left-SA {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <16 14>;
+            layers = <0 1>;
+        };
+
+        left-CSA {
+            bindings = <&kp LS(LA(LCTRL))>;
+            key-positions = <17 16 15>;
+            layers = <0 1>;
+        };
+
+        right-ctrl {
+            bindings = <&kp LCTRL>;
+            key-positions = <23 24>;
+            layers = <0 1>;
+        };
+
+        right-sft {
+            bindings = <&kp LSHIFT>;
+            key-positions = <24 25>;
+            layers = <0 1>;
+        };
+
+        right-alt {
+            bindings = <&kp LALT>;
+            key-positions = <25 26>;
+            layers = <0 1>;
+        };
+
+        right-CS {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <23 25>;
+            layers = <0 1>;
+        };
+
+        right-CA {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <23 26>;
+            layers = <0 1>;
+        };
+
+        right-SA {
+            bindings = <&kp LS(LALT)>;
+            key-positions = <24 26>;
+            layers = <0 1>;
+        };
+
+        right-CSA {
+            bindings = <&kp LS(LA(LCTRL))>;
+            key-positions = <23 24 25>;
         };
     };
 
@@ -163,10 +234,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB   &kp Q             &kp W                &kp E                 &kp R                 &kp T                                          &kp LG(L)                    &kp Y                    &kp U                 &kp I                 &kp O                &kp P             &kp DELETE
-&kp BSPC  &lt_home_row 4 A  &mt_home_row LALT S  &mt_home_row LSHFT D  &mt_home_row LCTRL F  &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H                    &mt_home_row LCTRL J  &mt_home_row LSHFT K  &mt_home_row LALT L  &lt_home_row 3 B  &kp BSPC
-&kp LGUI  &kp Z             &kp X                &kp C                 &kp V                 &kp B            &mkp MB3                      &tog 6                       &kp N                    &kp M                 &comma_quote          &dot_quote           &kp FSLH          &kp ENTER
-                                                 &kp LCTRL             &sk RSHFT             &lt_del_tab 1 0                                                             &lt_thumb_cluster 2 TAB  &kp SPACE             &kp ESC
+&kp TAB   &kp Q             &kp W  &kp E      &kp R      &kp T                                          &kp LG(L)                    &kp Y                    &kp U      &kp I         &kp O       &kp P             &kp DELETE
+&kp BSPC  &lt_home_row 4 A  &kp S  &kp D      &kp F      &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H                    &kp J      &kp K         &kp L       &lt_home_row 3 B  &kp BSPC
+&kp LGUI  &kp Z             &kp X  &kp C      &kp V      &kp B            &mkp MB3                      &tog 6                       &kp N                    &kp M      &comma_quote  &dot_quote  &kp FSLH          &kp ENTER
+                                   &kp LCTRL  &sk RSHFT  &lt_del_tab 1 0                                                             &lt_thumb_cluster 2 TAB  &kp SPACE  &kp ESC
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -175,10 +246,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp F1  &kp F2                      &kp F3                        &kp F4                       &kp F5                     &trans          &kp PERCENT  &kp MINUS                    &kp EQUAL                     &kp PLUS                    &kp ASTERISK  &trans
-&trans  &kp N1  &mt_home_row LALT NUMBER_2  &mt_home_row LSHIFT NUMBER_3  &mt_home_row LCTRL NUMBER_4  &kp N5             &trans  &trans  &trans  &kp N6       &mt_home_row LCTRL NUMBER_7  &mt_home_row LSHIFT NUMBER_8  &mt_home_row LALT NUMBER_9  &kp N0        &trans
-&trans  &kp F6  &kp F7                      &kp F8                        &kp F9                       &kp F10  &trans            &trans          &kp F11      &kp F12                      &trans                        &trans                      &trans        &trans
-                                            &trans                        &trans                       &trans                                     &trans       &trans                       &trans
+&trans  &kp F1  &kp F2        &kp F3        &kp F4  &kp F5                     &trans          &kp PERCENT  &kp MINUS  &kp EQUAL  &kp PLUS  &kp ASTERISK  &trans
+&trans  &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp N5             &trans  &trans  &trans  &kp N6       &kp N7     &kp N8     &kp N9    &kp N0        &trans
+&trans  &kp F6  &kp F7        &kp F8        &kp F9  &kp F10  &trans            &trans          &kp F11      &kp F12    &trans     &trans    &trans        &trans
+                              &trans        &trans  &trans                                     &trans       &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
