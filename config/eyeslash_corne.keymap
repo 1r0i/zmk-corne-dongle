@@ -88,36 +88,28 @@
             flavor = "hold-preferred";
         };
 
-        lt_thumb_cluster: lt_thumb_cluster {
+        HRL: HRL {
             compatible = "zmk,behavior-hold-tap";
-            label = "LT_THUMB_CLUSTER";
+            label = "HRL";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-        };
-
-        lt_home_row: lt_home_row {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_HOME_ROW";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <280>;
             flavor = "balanced";
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <150>;
+            quick-tap-ms = <175>;
         };
 
-        mt_home_row: mt_home_row {
+        HRM: HRM {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_HOME_ROW";
+            label = "HRM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <280>;
             flavor = "balanced";
-            require-prior-idle-ms = <100>;
+            require-prior-idle-ms = <150>;
+            quick-tap-ms = <175>;
         };
     };
 
@@ -147,84 +139,85 @@
         left-ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <16 17>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         left-sft {
             bindings = <&kp LSHIFT>;
             key-positions = <15 16>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         left-alt {
             bindings = <&kp LALT>;
             key-positions = <14 15>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         left-CS {
             bindings = <&kp LS(LCTRL)>;
             key-positions = <17 15>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         left-CA {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <14 17>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         left-SA {
             bindings = <&kp LS(LALT)>;
             key-positions = <16 14>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         left-CSA {
             bindings = <&kp LS(LA(LCTRL))>;
             key-positions = <17 16 15>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         right-ctrl {
             bindings = <&kp LCTRL>;
             key-positions = <23 24>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         right-sft {
             bindings = <&kp LSHIFT>;
             key-positions = <24 25>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         right-alt {
             bindings = <&kp LALT>;
             key-positions = <25 26>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         right-CS {
             bindings = <&kp LS(LCTRL)>;
             key-positions = <23 25>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         right-CA {
             bindings = <&kp LA(LCTRL)>;
             key-positions = <23 26>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         right-SA {
             bindings = <&kp LS(LALT)>;
             key-positions = <24 26>;
-            layers = <0 1>;
+            layers = <0 1 3>;
         };
 
         right-CSA {
             bindings = <&kp LS(LA(LCTRL))>;
             key-positions = <23 24 25>;
+            layers = <0 1 3>;
         };
     };
 
@@ -234,10 +227,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB   &kp Q             &kp W  &kp E      &kp R      &kp T                                          &kp LG(L)                    &kp Y                    &kp U      &kp I         &kp O       &kp P             &kp DELETE
-&kp BSPC  &lt_home_row 4 A  &kp S  &kp D      &kp F      &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H                    &kp J      &kp K         &kp L       &lt_home_row 3 B  &kp BSPC
-&kp LGUI  &kp Z             &kp X  &kp C      &kp V      &kp B            &mkp MB3                      &tog 6                       &kp N                    &kp M      &comma_quote  &dot_quote  &kp FSLH          &kp ENTER
-                                   &kp LCTRL  &sk RSHFT  &lt_del_tab 1 0                                                             &lt_thumb_cluster 2 TAB  &kp SPACE  &kp ESC
+&kp TAB   &kp Q     &kp W        &kp E         &kp R         &kp T                                          &kp LG(L)                    &kp Y  &kp U         &kp I          &kp O        &kp P     &kp DELETE
+&kp BSPC  &HRL 4 A  &HRM LALT S  &HRM LSHFT D  &HRM LCTRL F  &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H  &HRM LCTRL J  &HRM LSHIFT K  &HRM LALT L  &HRL 3 B  &kp BSPC
+&kp LGUI  &kp Z     &kp X        &kp C         &kp V         &kp B            &mkp MB3                      &tog 6                       &kp N  &kp M         &comma_quote   &dot_quote   &kp FSLH  &kp ENTER
+                                 &kp LCTRL     &sk RSHFT     &lt_del_tab 1 0                                                             &none  &kp SPACE     &kp ESC
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -246,10 +239,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp F1  &kp F2        &kp F3        &kp F4  &kp F5                     &trans          &kp PERCENT  &kp MINUS  &kp EQUAL  &kp PLUS  &kp ASTERISK  &trans
-&trans  &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp N4  &kp N5             &trans  &trans  &trans  &kp N6       &kp N7     &kp N8     &kp N9    &kp N0        &trans
-&trans  &kp F6  &kp F7        &kp F8        &kp F9  &kp F10  &trans            &trans          &kp F11      &kp F12    &trans     &trans    &trans        &trans
-                              &trans        &trans  &trans                                     &trans       &trans     &trans
+&trans  &kp F1  &kp F2              &kp F3                &kp F4               &kp F5                     &trans          &kp PERCENT  &kp MINUS            &kp EQUAL             &kp PLUS            &kp ASTERISK  &trans
+&trans  &kp N1  &HRM LALT NUMBER_2  &HRM LSHIFT NUMBER_3  &HRM LCTRL NUMBER_4  &kp N5             &trans  &trans  &trans  &kp N6       &HRM LCTRL NUMBER_7  &HRM LSHIFT NUMBER_8  &HRM LALT NUMBER_9  &kp N0        &trans
+&trans  &kp F6  &kp F7              &kp F8                &kp F9               &kp F10  &trans            &trans          &kp F11      &kp F12              &trans                &trans              &trans        &trans
+                                    &trans                &trans               &trans                                     &trans       &trans               &trans
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
