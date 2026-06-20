@@ -16,17 +16,17 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: A, h: '4'}
-  - S
-  - D
-  - F
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - AC FORWARD
   - $$mdi:apple-keyboard-caps$$
   - AC BACK
   - H
-  - J
-  - K
-  - L
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: B, h: Navi}
   - {t: '$$mdi:backspace$$', type: backspace}
   - LGUI
@@ -46,7 +46,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUMBER, s: '$$mdi:keyboard-tab$$'}
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-esc$$
   NUMBER:
@@ -65,17 +65,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
-  - '2'
-  - '3'
-  - {t: '4', s: $}
+  - {t: '2', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '3', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '4', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '5', s: '%'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
+  - {t: '7', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '8', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '9', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Navi:
@@ -398,42 +398,43 @@ combos:
   l: [QWERTY]
 - p: [16, 17]
   k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [15, 16]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [14, 15]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [17, 15]
   k: Sft+$$mdi:apple-keyboard-control$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [14, 17]
   k: Alt+$$mdi:apple-keyboard-control$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [16, 14]
   k: Sft+$$mdi:apple-keyboard-option$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [17, 16, 15]
   k: Sft+Alt+$$mdi:apple-keyboard-control$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [23, 24]
   k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [24, 25]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [25, 26]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [23, 25]
   k: Sft+$$mdi:apple-keyboard-control$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [23, 26]
   k: Alt+$$mdi:apple-keyboard-control$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [24, 26]
   k: Sft+$$mdi:apple-keyboard-option$$
-  l: [QWERTY, NUMBER]
+  l: [QWERTY, NUMBER, Navi]
 - p: [23, 24, 25]
   k: Sft+Alt+$$mdi:apple-keyboard-control$$
+  l: [QWERTY, NUMBER, Navi]
