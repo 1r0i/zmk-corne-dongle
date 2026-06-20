@@ -227,10 +227,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB   &kp Q     &kp W        &kp E         &kp R         &kp T                                          &kp LG(L)                    &kp Y  &kp U         &kp I          &kp O        &kp P     &kp DELETE
-&kp BSPC  &HRL 4 A  &HRM LALT S  &HRM LSHFT D  &HRM LCTRL F  &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H  &HRM LCTRL J  &HRM LSHIFT K  &HRM LALT L  &HRL 3 B  &kp BSPC
-&kp LGUI  &kp Z     &kp X        &kp C         &kp V         &kp B            &mkp MB3                      &tog 6                       &kp N  &kp M         &comma_quote   &dot_quote   &kp FSLH  &kp ENTER
-                                 &kp LCTRL     &sk RSHFT     &lt_del_tab 1 0                                                             &none  &kp SPACE     &kp ESC
+&kp TAB   &kp Q     &kp W        &kp E         &kp R         &kp T                                          &kp LG(L)                    &kp Y      &kp U         &kp I          &kp O        &kp P     &kp DELETE
+&kp BSPC  &HRL 4 A  &HRM LALT S  &HRM LSHFT D  &HRM LCTRL F  &kp G                        &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H      &HRM LCTRL J  &HRM LSHIFT K  &HRM LALT L  &HRL 3 B  &kp BSPC
+&kp LGUI  &kp Z     &kp X        &kp C         &kp V         &kp B            &mkp MB3                      &tog 6                       &kp N      &kp M         &comma_quote   &dot_quote   &kp FSLH  &kp ENTER
+                                 &kp LCTRL     &sk RSHFT     &lt_del_tab 1 0                                                             &lt 2 TAB  &kp SPACE     &kp ESC
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
