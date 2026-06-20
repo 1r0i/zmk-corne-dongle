@@ -16,17 +16,17 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: A, h: '4'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - S
+  - D
+  - F
   - G
   - AC FORWARD
   - $$mdi:apple-keyboard-caps$$
   - AC BACK
   - H
-  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - J
+  - K
+  - L
   - {t: B, h: Navi}
   - {t: '$$mdi:backspace$$', type: backspace}
   - LGUI
@@ -65,17 +65,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
-  - {t: '2', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '3', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '4', h: '$$mdi:apple-keyboard-control$$'}
+  - '2'
+  - '3'
+  - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '6', s: ^}
-  - {t: '7', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '8', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '9', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -396,9 +396,44 @@ combos:
 - p: [46, 43]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
+- p: [16, 17]
+  k: $$mdi:apple-keyboard-control$$
+  l: [QWERTY, NUMBER]
+- p: [15, 16]
+  k: $$mdi:apple-keyboard-shift$$
+  l: [QWERTY, NUMBER]
+- p: [14, 15]
+  k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY, NUMBER]
+- p: [17, 15]
+  k: Sft+$$mdi:apple-keyboard-control$$
+  l: [QWERTY, NUMBER]
+- p: [14, 17]
+  k: Alt+$$mdi:apple-keyboard-control$$
+  l: [QWERTY, NUMBER]
+- p: [16, 14]
+  k: Sft+$$mdi:apple-keyboard-option$$
+  l: [QWERTY, NUMBER]
+- p: [17, 16, 15]
+  k: Sft+Alt+$$mdi:apple-keyboard-control$$
+  l: [QWERTY, NUMBER]
+- p: [23, 24]
+  k: $$mdi:apple-keyboard-control$$
+  l: [QWERTY, NUMBER]
 - p: [24, 25]
-  k: {t: '''', s: '"'}
-  l: [QWERTY]
-- p: [16, 15]
-  k: '"'
-  l: [QWERTY]
+  k: $$mdi:apple-keyboard-shift$$
+  l: [QWERTY, NUMBER]
+- p: [25, 26]
+  k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY, NUMBER]
+- p: [23, 25]
+  k: Sft+$$mdi:apple-keyboard-control$$
+  l: [QWERTY, NUMBER]
+- p: [23, 26]
+  k: Alt+$$mdi:apple-keyboard-control$$
+  l: [QWERTY, NUMBER]
+- p: [24, 26]
+  k: Sft+$$mdi:apple-keyboard-option$$
+  l: [QWERTY, NUMBER]
+- p: [23, 24, 25]
+  k: Sft+Alt+$$mdi:apple-keyboard-control$$
