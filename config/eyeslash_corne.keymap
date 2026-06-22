@@ -202,7 +202,7 @@
                                  &trans          &trans           &kp DELETE                                       &trans      &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_5 {
