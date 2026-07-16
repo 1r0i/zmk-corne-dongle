@@ -187,7 +187,7 @@
             bindings = <
 &trans  &trans  &trans    &trans     &trans     &trans                        &trans          &kp PAGE_UP    &kp HOME         &kp UP          &kp END          &trans  &trans
 &trans  &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &kp K_MENU            &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT         &kp DOWN        &kp RIGHT        &trans  &trans
-&trans  &trans  &trans    &trans     &trans     &trans      &trans            &trans          &kp INSERT     &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans  &trans
+&trans  &trans  &trans    &trans     &trans     &kp RCTRL   &trans            &trans          &kp INSERT     &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans  &trans
                           &trans     &trans     &trans                                        &kp DELETE     &trans           &trans
             >;
 
@@ -198,7 +198,7 @@
             bindings = <
 &trans  &trans  &kp HOME         &kp UP          &kp END          &kp PAGE_UP                      &trans          &trans      &trans     &trans      &trans    &trans  &trans
 &trans  &trans  &kp LEFT         &kp DOWN        &kp RIGHT        &kp PAGE_DOWN            &trans  &trans  &trans  &kp K_MENU  &kp LCTRL  &kp LSHIFT  &kp LALT  &trans  &trans
-&trans  &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INSERT     &trans            &trans          &trans      &trans     &trans      &trans    &trans  &trans
+&trans  &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INSERT     &trans            &trans          &kp RCTRL   &trans     &trans      &trans    &trans  &trans
                                  &trans          &kp ENTER        &kp DELETE                                       &trans      &trans     &trans
             >;
 
