@@ -68,26 +68,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        del_tab: del_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DEL_TAB";
-            bindings = <&kp DELETE>, <&kp TAB>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
-            keep-mods = <(MOD_LALT)>;
-        };
-
-        lt_del_tab: lt_del_tab {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_DEL_TAB";
-            bindings = <&mo>, <&del_tab>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "hold-preferred";
-        };
-
         HRL: HRL {
             compatible = "zmk,behavior-hold-tap";
             label = "HRL";
@@ -106,7 +86,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
             quick-tap-ms = <175>;
