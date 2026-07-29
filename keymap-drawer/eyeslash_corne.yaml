@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
   - {t: SYMBOL, h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:apple-keyboard-option$$', h: LWIN}
+  - {t: '$$mdi:keyboard-esc$$', h: LWIN}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
