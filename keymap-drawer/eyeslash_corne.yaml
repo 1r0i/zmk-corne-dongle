@@ -393,7 +393,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [46, 43]
+- p: [24, 25]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
 - p: [17, 32]
