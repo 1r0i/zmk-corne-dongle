@@ -112,7 +112,7 @@
 
         hangul {
             bindings = <&kp RALT>;
-            key-positions = <46 43>;
+            key-positions = <24 25>;
             layers = <0>;
         };
 
