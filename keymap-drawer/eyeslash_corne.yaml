@@ -39,8 +39,8 @@ layers:
   - {t: '6', h: toggle}
   - N
   - M
-  - {t: ',', s: '"'}
-  - {t: ., s: ''''}
+  - {t: ',', s: <}
+  - .
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-esc$$
@@ -132,13 +132,13 @@ layers:
   - {t: ']', s: '}'}
   - '#'
   - $
-  - '"'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '''', s: '"'}
-  - {t: /, s: '?'}
   - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
+  - {t: /, s: '?'}
+  - '"'
+  - {t: '''', s: '"'}
   - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
