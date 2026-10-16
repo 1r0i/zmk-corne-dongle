@@ -138,10 +138,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q     &kp W        &kp E         &kp R                      &kp T                                    &kp LG(L)                    &kp Y  &kp U         &kp I            &kp O        &kp P     &kp DELETE
-&kp BSPC        &HRL 4 A  &HRM LALT S  &HRM LSHFT D  &HRM LCTRL F               &kp G                  &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H  &HRM LCTRL J  &HRM LSHIFT K    &HRM LALT L  &HRL 3 B  &kp BSPC
-&mt LWIN ENTER  &kp Z     &kp X        &kp C         &kp V                      &kp B      &mkp MB3                      &tog 6                       &kp N  &kp M         &kp COMMA        &kp PERIOD   &kp FSLH  &kp ENTER
-                                       &kp ESCAPE    &sk_tap RSHFT RIGHT_SHIFT  &lt 1 TAB                                                             &sl 2  &kp SPACE     &mt LWIN ESCAPE
+&kp TAB       &kp Q     &kp W        &kp E         &kp R                      &kp T                                    &kp LG(L)                    &kp Y  &kp U         &kp I          &kp O        &kp P     &kp DELETE
+&kp BSPC      &HRL 4 A  &HRM LALT S  &HRM LSHFT D  &HRM LCTRL F               &kp G                  &kp C_AC_FORWARD  &kp CAPSLOCK  &kp C_AC_BACK  &kp H  &HRM LCTRL J  &HRM LSHIFT K  &HRM LALT L  &HRL 3 B  &kp BSPC
+&kp LEFT_GUI  &kp Z     &kp X        &kp C         &kp V                      &kp B      &mkp MB3                      &tog 6                       &kp N  &kp M         &kp COMMA      &kp PERIOD   &kp FSLH  &kp ENTER
+                                     &kp ESCAPE    &sk_tap LCTRL RIGHT_SHIFT  &lt 1 TAB                                                             &sl 2  &kp SPACE     &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -176,7 +176,7 @@
             bindings = <
 &trans  &trans  &trans    &trans     &trans     &trans                        &trans          &kp PAGE_UP    &kp HOME         &kp UP          &kp END          &trans  &bootloader
 &trans  &trans  &kp LALT  &kp LSHFT  &kp LCTRL  &kp K_MENU            &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT         &kp DOWN        &kp RIGHT        &trans  &trans
-&trans  &trans  &trans    &trans     &kp RCTRL  &trans      &trans            &trans          &kp INSERT     &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans  &trans
+&trans  &trans  &trans    &trans     &kp RCTRL  &trans      &trans            &trans          &kp INSERT     &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans  &sys_reset
                           &trans     &trans     &trans                                        &kp DELETE     &trans           &trans
             >;
 
@@ -187,7 +187,7 @@
             bindings = <
 &bootloader  &trans  &kp HOME         &kp UP          &kp END          &kp PAGE_UP                      &trans          &trans      &trans     &trans      &trans    &trans  &trans
 &trans       &trans  &kp LEFT         &kp DOWN        &kp RIGHT        &kp PAGE_DOWN            &trans  &trans  &trans  &kp K_MENU  &kp LCTRL  &kp LSHIFT  &kp LALT  &trans  &trans
-&trans       &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INSERT     &trans            &trans          &trans      &kp RCTRL  &trans      &trans    &trans  &trans
+&sys_reset   &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp INSERT     &trans            &trans          &trans      &kp RCTRL  &trans      &trans    &trans  &trans
                                       &trans          &kp ENTER        &kp DELETE                                       &trans      &trans     &trans
             >;
 
