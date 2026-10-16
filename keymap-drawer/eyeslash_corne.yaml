@@ -21,7 +21,7 @@ layers:
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - AC FORWARD
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '6', h: toggle}
   - AC BACK
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
