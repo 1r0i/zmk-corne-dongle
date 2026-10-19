@@ -21,7 +21,7 @@ layers:
   - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - AC FORWARD
-  - {t: '6', h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - AC BACK
   - H
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
