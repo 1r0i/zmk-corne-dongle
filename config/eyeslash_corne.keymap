@@ -136,6 +136,7 @@
         ctrl+r {
             bindings = <&kp LC(R)>;
             key-positions = <17 4>;
+            layers = <0>;
         };
     };
 
