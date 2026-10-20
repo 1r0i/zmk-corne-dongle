@@ -132,6 +132,11 @@
             key-positions = <17 32>;
             layers = <0>;
         };
+
+        ctrl+r {
+            bindings = <&kp LC(R)>;
+            key-positions = <17 4>;
+        };
     };
 
     keymap {
