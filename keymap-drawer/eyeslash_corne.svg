@@ -519,8 +519,8 @@ rect.held, rect.combo.held {
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#SYMBOL">
-<text x="0" y="-4" class="key tap layer-activator">SYMBOL</text>
+<a href="#symbol">
+<text x="0" y="-4" class="key tap layer-activator">symbol</text>
 </a><use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:gesture-tap-hold"/>
 </g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
@@ -1049,11 +1049,11 @@ rect.held, rect.combo.held {
 <a href="#x_x">
 <text x="0" y="-4" class="key tap layer-activator">5</text>
 </a></g>
-<g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<g transform="translate(632, 224) rotate(-24.0)" class="key held keypos-45">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 <a href="#x_x">
-<text x="0" y="-4" class="key tap layer-activator">5</text>
+<text x="0" y="-4" class="key held tap layer-activator">5</text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key trans keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -2806,11 +2806,11 @@ rect.held, rect.combo.held {
 <a href="#x_x">
 <text x="0" y="-4" class="key tap layer-activator">5</text>
 </a></g>
-<g transform="translate(632, 224) rotate(-24.0)" class="key held keypos-45">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <a href="#x_x">
-<text x="0" y="-4" class="key held tap layer-activator">5</text>
+<text x="0" y="-4" class="key tap layer-activator">5</text>
 </a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key trans keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
