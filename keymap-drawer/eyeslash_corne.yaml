@@ -59,9 +59,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '%'
   - {t: '-', s: _}
-  - {t: '=', s: +}
   - +
   - '*'
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
@@ -109,7 +109,7 @@ layers:
   - ^
   - '&'
   - '*'
-  - '|'
+  - {t: /, s: '?'}
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -136,7 +136,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - {t: /, s: '?'}
+  - '|'
   - '"'
   - {t: '''', s: '"'}
   - '?'
@@ -391,6 +391,55 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  '8':
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
+  - '~'
+  - {t: '=', s: +}
+  - _
+  - ^
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '%'
+  - {t: '-', s: _}
+  - +
+  - '*'
+  - '!'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, s: '?'}
+  - {t: '[', s: '{'}
+  - '{'
+  - (
+  - <
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '>'
+  - )
+  - '}'
+  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&'
+  - '|'
+  - ':'
+  - {t: ;, s: ':'}
+  - '@'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '#'
+  - $
+  - '"'
+  - {t: '''', s: '"'}
+  - '?'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '5'
+  - '5'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [24, 25]
