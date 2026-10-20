@@ -166,7 +166,7 @@
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
         };
 
-        layer_9 {
+        symbol_layer {
             bindings = <
 &trans  &kp SLASH        &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL          &kp PIPE                         &trans          &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH  &trans
 &trans  &kp EXCLAMATION  &kp ASTERISK   &kp COLON         &kp MINUS          &kp AMPERSAND            &trans  &trans  &trans  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp GRAVE      &trans
