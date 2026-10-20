@@ -163,9 +163,9 @@
 
         layer_9 {
             bindings = <
-&trans  &kp SLASH        &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL          &kp PERCENT                      &trans          &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH  &trans
+&trans  &kp SLASH        &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL          &kp PIPE                         &trans          &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH  &trans
 &trans  &kp EXCLAMATION  &kp ASTERISK   &kp COLON         &kp MINUS          &kp AMPERSAND            &trans  &trans  &trans  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp GRAVE      &trans
-&trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE       &trans            &trans          &kp AT_SIGN  &kp UNDERSCORE        &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp QUESTION   &trans
+&trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &trans            &trans          &kp AT_SIGN  &kp UNDERSCORE        &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp QUESTION   &trans
                                         &trans            &trans             &mo 5                                            &mo 5        &trans                &trans
             >;
         };
