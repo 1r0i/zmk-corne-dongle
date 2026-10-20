@@ -176,10 +176,10 @@
         layer_3 {
             display-name = "Navi";
             bindings = <
-&trans  &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans                    &trans          &kp PAGE_UP    &kp HOME    &kp UP      &kp END     &trans  &bootloader
-&trans  &trans  &kp LALT         &kp LSHFT       &kp LCTRL        &trans            &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT    &kp DOWN    &kp RIGHT   &trans  &trans
-&trans  &trans  &kp RALT         &kp RSHIFT      &kp RCTRL        &trans  &trans            &trans          &kp INSERT     &kp DELETE  &kp ESCAPE  &kp K_MENU  &trans  &sys_reset
-                                 &trans          &trans           &trans                                    &trans         &trans      &trans
+&trans  &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans                    &trans          &kp PAGE_UP    &kp HOME    &kp UP         &kp END     &trans  &bootloader
+&trans  &trans  &kp LALT         &kp LSHFT       &kp LCTRL        &trans            &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT    &kp DOWN       &kp RIGHT   &trans  &trans
+&trans  &trans  &kp RALT         &kp RSHIFT      &kp RCTRL        &trans  &trans            &trans          &kp INSERT     &kp DELETE  &kp ESCAPE     &kp K_MENU  &trans  &sys_reset
+                                 &trans          &trans           &trans                                    &kp TAB        &trans      &kp BACKSPACE
             >;
 
             sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
@@ -187,10 +187,10 @@
 
         layer_4 {
             bindings = <
-&bootloader  &trans  &kp HOME    &kp UP      &kp END     &kp PAGE_UP                      &trans          &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans  &trans
-&trans       &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &kp PAGE_DOWN            &trans  &trans  &trans  &trans  &kp LCTRL        &kp LSHIFT      &kp LALT         &trans  &trans
-&sys_reset   &trans  &kp K_MENU  &kp ESCAPE  &kp DELETE  &kp INSERT     &trans            &trans          &trans  &kp RCTRL        &kp RSHIFT      &kp RALT         &trans  &trans
-                                 &trans      &kp ENTER   &trans                                           &trans  &trans           &trans
+&bootloader  &trans  &kp HOME    &kp UP         &kp END     &kp PAGE_UP                      &trans          &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans  &trans
+&trans       &trans  &kp LEFT    &kp DOWN       &kp RIGHT   &kp PAGE_DOWN            &trans  &trans  &trans  &trans  &kp LCTRL        &kp LSHIFT      &kp LALT         &trans  &trans
+&sys_reset   &trans  &kp K_MENU  &kp ESCAPE     &kp DELETE  &kp INSERT     &trans            &trans          &trans  &kp RCTRL        &kp RSHIFT      &kp RALT         &trans  &trans
+                                 &kp BACKSPACE  &kp ENTER   &kp TAB                                          &trans  &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
