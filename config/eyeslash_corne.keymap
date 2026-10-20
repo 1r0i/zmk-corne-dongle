@@ -152,9 +152,9 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp F1  &kp F2              &kp F3                &kp F4               &kp F5                     &trans          &kp PERCENT  &kp MINUS            &kp EQUAL             &kp PLUS            &kp ASTERISK  &trans
-&trans  &kp N1  &HRM LALT NUMBER_2  &HRM LSHIFT NUMBER_3  &HRM LCTRL NUMBER_4  &kp N5             &trans  &trans  &trans  &kp N6       &HRM LCTRL NUMBER_7  &HRM LSHIFT NUMBER_8  &HRM LALT NUMBER_9  &kp N0        &trans
-&trans  &kp F6  &kp F7              &kp F8                &kp F9               &kp F10  &trans            &trans          &kp F11      &kp F12              &trans                &trans              &trans        &trans
+&trans  &kp F1  &kp F2              &kp F3                &kp F4               &kp F5                     &trans          &kp PERCENT  &kp MINUS            &kp PLUS              &kp ASTERISK        &kp EQUAL  &trans
+&trans  &kp N1  &HRM LALT NUMBER_2  &HRM LSHIFT NUMBER_3  &HRM LCTRL NUMBER_4  &kp N5             &trans  &trans  &trans  &kp N6       &HRM LCTRL NUMBER_7  &HRM LSHIFT NUMBER_8  &HRM LALT NUMBER_9  &kp N0     &trans
+&trans  &kp F6  &kp F7              &kp F8                &kp F9               &kp F10  &trans            &trans          &kp F11      &kp F12              &trans                &trans              &trans     &trans
                                     &trans                &trans               &mo 5                                      &mo 5        &trans               &trans
             >;
 
@@ -164,9 +164,9 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL        &kp AT           &kp COLON  &kp SEMI        &kp PRCNT                        &trans          &kp CARET         &kp AMPS   &kp ASTRK          &kp PIPE              &kp BACKSLASH          &trans
+&trans  &kp EXCL        &kp AT           &kp COLON  &kp SEMI        &kp PRCNT                        &trans          &kp CARET         &kp AMPS   &kp ASTERISK       &kp SLASH             &kp BACKSLASH          &trans
 &trans  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp EQUAL  &kp UNDERSCORE  &kp LESS_THAN            &trans  &trans  &trans  &kp GREATER_THAN  &kp MINUS  &kp PLUS           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp LBKT        &kp RBKT         &kp HASH   &kp DOLLAR      &kp TILDE      &trans            &trans          &kp GRAVE         &kp SLASH  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp QUESTION           &trans
+&trans  &kp LBKT        &kp RBKT         &kp HASH   &kp DOLLAR      &kp TILDE      &trans            &trans          &kp GRAVE         &kp PIPE   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE      &kp QUESTION           &trans
                                          &trans     &trans          &mo 5                                            &mo 5             &trans     &trans
             >;
 
@@ -192,8 +192,6 @@
 &sys_reset   &trans  &kp K_MENU  &kp ESCAPE     &kp DELETE  &kp INSERT     &trans            &trans          &trans  &kp RCTRL        &kp RSHIFT      &kp RALT         &trans  &trans
                                  &kp BACKSPACE  &kp ENTER   &kp TAB                                          &trans  &trans           &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_5 {
@@ -203,8 +201,6 @@
 &trans  &kp F9  &kp F10       &kp F11         &kp F12        &none   &trans            &trans          &none   &kp F21         &kp F22          &kp F23        &kp F24  &trans
                               &trans          &trans         &trans                                    &trans  &trans          &trans
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_6 {
@@ -214,8 +210,6 @@
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B      &trans              &kp DOWN             &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                          &kp LALT  &mo 7  &kp SPACE                                           &kp BACKSPACE  &mo 7  &tog 6
             >;
-
-            sensor-bindings = <&scroll_encoder>;
         };
 
         layer_7 {
@@ -225,8 +219,15 @@
 &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &trans            &trans          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp ENTER
                                        &trans        &trans        &trans                                    &trans        &trans        &trans
             >;
+        };
 
-            sensor-bindings = <&scroll_encoder>;
+        layer_8 {
+            bindings = <
+&trans  &kp GRAVE      &kp TILDE  &kp EQUAL       &kp UNDERSCORE        &kp CARET                        &trans          &kp PERCENT       &kp MINUS              &kp PLUS           &kp ASTERISK      &kp EXCLAMATION  &trans
+&trans  &kp FSLH       &kp LBKT   &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LESS_THAN            &trans  &trans  &trans  &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp RBKT          &kp BSLH         &trans
+&trans  &kp AMPERSAND  &kp PIPE   &kp COLON       &kp SEMICOLON         &kp AT_SIGN    &trans            &trans          &kp HASH          &kp DOLLAR             &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp QUESTION     &trans
+                                  &trans          &trans                &mo 5                                            &mo 5             &trans                 &trans
+            >;
         };
     };
 };
