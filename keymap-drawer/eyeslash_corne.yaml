@@ -98,45 +98,45 @@ layers:
   - '5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  SYMBOL:
+  '9':
   - {t: '$$mdi:transfer$$', type: trans}
-  - '!'
-  - '@'
-  - ':'
-  - {t: ;, s: ':'}
+  - {t: /, s: '?'}
+  - <
+  - '>'
+  - {t: '=', s: +}
   - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - ^
-  - '&'
-  - '*'
-  - {t: /, s: '?'}
+  - '{'
+  - '}'
+  - $
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '{'
-  - '}'
-  - {t: '=', s: +}
-  - _
-  - <
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '>'
+  - '!'
+  - '*'
+  - ':'
   - {t: '-', s: _}
-  - +
+  - '&'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '#'
   - (
   - )
+  - {t: ;, s: ':'}
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
+  - +
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '#'
-  - $
-  - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
   - '|'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '@'
+  - _
   - '"'
   - {t: '''', s: '"'}
   - '?'
@@ -144,7 +144,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '5'
-  - {t: '5', type: held}
+  - '5'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Navi:
@@ -439,6 +439,55 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - '5'
   - '5'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  SYMBOL:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '!'
+  - '@'
+  - ':'
+  - {t: ;, s: ':'}
+  - '%'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - ^
+  - '&'
+  - '*'
+  - {t: /, s: '?'}
+  - {t: \, s: '|'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '{'
+  - '}'
+  - {t: '=', s: +}
+  - _
+  - <
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '>'
+  - {t: '-', s: _}
+  - +
+  - (
+  - )
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - '#'
+  - $
+  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
+  - '|'
+  - '"'
+  - {t: '''', s: '"'}
+  - '?'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '5'
+  - {t: '5', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
