@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:keyboard-tab$$
+  - $$mdi:apple-keyboard-control$$
   - {t: A, h: '4'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
@@ -29,7 +29,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
   - {t: B, h: Navi}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
   - Z
   - X
   - C
@@ -42,13 +42,13 @@ layers:
   - {t: ',', s: <}
   - .
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-option$$
+  - LGUI
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
   - {t: symbol, h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:apple-keyboard-option$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
