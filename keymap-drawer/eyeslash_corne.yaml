@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyeslash_corne}
 layers:
   QWERTY:
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:backspace-reverse-outline$$
   - Q
   - W
   - E
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - .
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - LGUI
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
