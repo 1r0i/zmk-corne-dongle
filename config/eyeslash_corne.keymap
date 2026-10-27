@@ -105,10 +105,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&HRM LALT S &mo 6>,
+                <&mt LALT ESCAPE &mo 6>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&HRM LALT S &mo 6>;
+                <&mt LALT ESCAPE &mo 6>;
 
             label = "ALT_TAB";
         };
@@ -120,10 +120,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q     &kp W     &kp E          &kp R         &kp T                             &kp UP                &kp Y  &kp U         &kp I          &kp O        &kp P      &kp DELETE
-&kp LCTRL  &HRL 4 A  &alt_tab  &HRM LSHIFT D  &HRM LCTRL F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &HRM LCTRL J  &HRM LSHIFT K  &HRM LALT L  &HRL 5 B   &kp BACKSPACE
-&kp LGUI   &kp Z     &kp X     &kp C          &kp V         &kp SLASH  &kp SPACE              &kp DOWN              &kp N  &kp M         &kp COMMA      &kp DOT      &kp ENTER  &kp CAPSLOCK
-                               &kp ESCAPE     &sk RSHIFT    &lt 1 TAB                                               &sl 2  &kp SPACE     &kp RALT
+&kp DELETE  &kp Q     &kp W        &kp E          &kp R         &kp T                             &kp UP                &kp Y  &kp U         &kp I          &kp O        &kp P      &kp DELETE
+&kp LCTRL   &HRL 4 A  &HRM LALT S  &HRM LSHIFT D  &HRM LCTRL F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &HRM LCTRL J  &HRM LSHIFT K  &HRM LALT L  &HRL 5 B   &kp BACKSPACE
+&kp LGUI    &kp Z     &kp X        &kp C          &kp V         &kp SLASH  &kp SPACE              &kp DOWN              &kp N  &kp M         &kp COMMA      &kp DOT      &kp ENTER  &kp RALT
+                                   &alt_tab       &sk RSHIFT    &lt 1 TAB                                               &sl 2  &kp SPACE     &kp ESCAPE
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -132,10 +132,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp F1  &kp F2              &kp F3                &kp F4               &kp F5                             &mmv MOVE_UP                     &kp PERCENT  &kp MINUS            &kp PLUS              &kp ASTERISK        &kp EQUAL  &trans
-&trans  &kp N1  &HRM LALT NUMBER_2  &HRM LSHIFT NUMBER_3  &HRM LCTRL NUMBER_4  &kp N5             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp N6       &HRM LCTRL NUMBER_7  &HRM LSHIFT NUMBER_8  &HRM LALT NUMBER_9  &kp N0     &trans
-&trans  &kp F6  &kp F7              &kp F8                &kp F9               &kp F10  &trans                    &mmv MOVE_DOWN                   &kp F11      &kp F12              &trans                &trans              &trans     &trans
-                                    &trans                &trans               &trans                                                              &trans       &trans               &trans
+&trans  &kp F1  &kp F2              &kp F3                &kp F4               &kp F5                     &trans          &kp PERCENT  &kp MINUS            &kp PLUS              &kp ASTERISK        &kp EQUAL  &trans
+&trans  &kp N1  &HRM LALT NUMBER_2  &HRM LSHIFT NUMBER_3  &HRM LCTRL NUMBER_4  &kp N5             &trans  &trans  &trans  &kp N6       &HRM LCTRL NUMBER_7  &HRM LSHIFT NUMBER_8  &HRM LALT NUMBER_9  &kp N0     &trans
+&trans  &kp F6  &kp F7              &kp F8                &kp F9               &kp F10  &trans            &trans          &kp F11      &kp F12              &trans                &trans              &trans     &trans
+                                    &trans                &trans               &mo 3                                      &mo 3        &trans               &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -185,10 +185,10 @@
 
         alt_tab {
             bindings = <
-&trans  &trans  &trans  &trans                  &trans          &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &HRM LSHIFT LEFT_ARROW  &HRM LCTRL TAB  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans                  &trans          &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans                  &trans          &trans                                    &trans  &trans  &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans   &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp TAB  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans   &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans          &trans   &trans                                    &trans  &trans  &trans
             >;
         };
     };
