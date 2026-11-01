@@ -97,6 +97,12 @@
             key-positions = <17 32>;
             layers = <0>;
         };
+
+        hangul {
+            bindings = <&kp RALT>;
+            key-positions = <46 43>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -122,7 +128,7 @@
             bindings = <
 &kp DELETE  &kp Q     &kp W        &kp E          &kp R         &kp T                             &kp UP                &kp Y  &kp U         &kp I          &kp O        &kp P      &kp DELETE
 &kp LCTRL   &HRL 4 A  &HRM LALT S  &HRM LSHIFT D  &HRM LCTRL F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &HRM LCTRL J  &HRM LSHIFT K  &HRM LALT L  &HRL 5 B   &kp BACKSPACE
-&kp LGUI    &kp Z     &kp X        &kp C          &kp V         &kp SLASH  &kp SPACE              &kp DOWN              &kp N  &kp M         &kp COMMA      &kp DOT      &kp ENTER  &kp RALT
+&kp LGUI    &kp Z     &kp X        &kp C          &kp V         &kp SLASH  &kp SPACE              &kp DOWN              &kp N  &kp M         &kp COMMA      &kp DOT      &kp ENTER  &kp RGUI
                                    &alt_tab       &sk RSHIFT    &lt 1 TAB                                               &sl 2  &kp SPACE     &kp ESCAPE
             >;
 
