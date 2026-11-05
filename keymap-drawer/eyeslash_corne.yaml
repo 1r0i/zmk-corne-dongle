@@ -347,6 +347,8 @@ combos:
 - p: [17, 32]
   k: Ctl+V
   l: [QWERTY]
-- p: [46, 43]
+- p: [24, 25]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
+- p: [43, 46]
+  k: Ctl+Gui+F7
