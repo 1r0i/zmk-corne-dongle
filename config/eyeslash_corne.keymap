@@ -100,8 +100,13 @@
 
         hangul {
             bindings = <&kp RALT>;
-            key-positions = <46 43>;
+            key-positions = <24 25>;
             layers = <0>;
+        };
+
+        catchType {
+            bindings = <&kp LC(LG(F7))>;
+            key-positions = <43 46>;
         };
     };
 
