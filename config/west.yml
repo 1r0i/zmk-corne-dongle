@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/tokyo2006
     - name: englmaxi
       url-base: https://github.com/englmaxi
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk
       remote: cormoran
@@ -37,7 +37,7 @@ manifest:
       remote: englmaxi
       revision: v0.3
     - name: zmk-tri-state
-      remote: caksoylar
+      remote: dhruvinsh
       revision: main
   self:
     path: config
