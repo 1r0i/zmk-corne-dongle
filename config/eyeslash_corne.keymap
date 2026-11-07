@@ -52,6 +52,13 @@
             tap-ms = <0>;
         };
 
+        swap: swapper {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <3 15 16>;
+        };
+
         HRM: HRM {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM";
