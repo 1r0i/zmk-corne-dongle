@@ -198,10 +198,10 @@
 
         alt_tab {
             bindings = <
-&trans  &trans  &trans          &kp UP_ARROW    &trans   &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp TAB  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans          &trans   &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans          &trans   &trans                                    &trans  &trans  &trans
+&trans  &trans  &kp LC(Z)       &kp UP_ARROW    &kp LC(LS(Z))  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp TAB        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LC(X)       &kp LC(C)       &kp LC(V)      &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans          &trans         &trans                                    &trans  &trans  &trans
             >;
         };
     };
