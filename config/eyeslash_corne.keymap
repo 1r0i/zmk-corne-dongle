@@ -56,6 +56,7 @@
             compatible = "zmk,behavior-tri-state";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+
             ignored-key-positions = <3 15 16>;
         };
 
@@ -128,7 +129,7 @@
 &kp DELETE  &kp Q     &kp W        &kp E          &kp R         &kp T                             &kp UP                &kp Y  &kp U         &kp I          &kp O        &kp P      &kp DELETE
 &kp LCTRL   &HRL 4 A  &HRM LALT S  &HRM LSHIFT D  &HRM LCTRL F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &HRM LCTRL J  &HRM LSHIFT K  &HRM LALT L  &HRL 5 B   &kp BACKSPACE
 &kp LGUI    &kp Z     &kp X        &kp C          &kp V         &kp SLASH  &kp SPACE              &kp DOWN              &kp N  &kp M         &kp COMMA      &kp DOT      &kp ENTER  &kp RGUI
-                                   &kp A          &sk RSHIFT    &lt 1 TAB                                               &sl 2  &kp SPACE     &kp ESCAPE
+                                   &lt 6 ESCAPE   &sk RSHIFT    &lt 1 TAB                                               &sl 2  &kp SPACE     &kp ESCAPE
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -191,7 +192,7 @@
         alt_tab {
             bindings = <
 &trans  &trans  &kp LC(Z)       &kp UP_ARROW    &kp LC(LS(Z))  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp TAB        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &swap          &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LC(X)       &kp LC(C)       &kp LC(V)      &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                 &trans          &trans         &trans                                    &trans  &trans  &trans
             >;
