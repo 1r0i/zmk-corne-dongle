@@ -27,6 +27,8 @@
 
 &lt { flavor = "hold-preferred"; };
 
+&sk { quick-release; };
+
 / {
     behaviors {
         td0: td0 {
