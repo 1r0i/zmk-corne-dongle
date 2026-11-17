@@ -176,7 +176,7 @@
 &bootloader  &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp PAGE_UP                      &trans          &kp CAPSLOCK  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &trans  &trans
 &trans       &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN            &trans  &trans  &trans  &trans        &kp LCTRL        &kp LSHIFT      &kp LALT         &trans  &trans
 &sys_reset   &trans  &kp K_MENU      &kp BACKSPACE   &kp DELETE       &kp INSERT     &trans            &trans          &trans        &kp RCTRL        &kp RSHIFT      &kp RALT         &trans  &trans
-                                     &kp ESCAPE      &kp ENTER        &kp TAB                                          &trans        &trans           &trans
+                                     &kp ESCAPE      &kp SPACE        &kp TAB                                          &trans        &trans           &trans
             >;
         };
 
