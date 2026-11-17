@@ -27,14 +27,14 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: B, h: right_navi}
+  - {t: ;, h: right_navi, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - LGUI
   - Z
   - X
   - C
   - V
-  - {t: /, s: '?'}
+  - B
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-down-bold$$
   - N
