@@ -114,9 +114,9 @@
             layers = <0>;
         };
 
-        catchType {
-            bindings = <&kp LC(LG(F7))>;
-            key-positions = <43 46>;
+        win+space {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <15 16>;
         };
     };
 
