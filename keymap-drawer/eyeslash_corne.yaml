@@ -350,5 +350,5 @@ combos:
 - p: [24, 25]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
-- p: [43, 46]
-  k: Ctl+Gui+F7
+- p: [15, 16]
+  k: Gui+$$mdi:keyboard-space$$
