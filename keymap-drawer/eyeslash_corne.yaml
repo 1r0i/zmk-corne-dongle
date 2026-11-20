@@ -36,7 +36,7 @@ layers:
   - V
   - B
   - $$mdi:keyboard-space$$
-  - $$mdi:arrow-down-bold$$
+  - {t: COLEMAK, h: toggle}
   - N
   - M
   - {t: ',', s: <}
@@ -49,6 +49,55 @@ layers:
   - {t: SYMBOL, h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-esc$$
+  COLEMAK:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Q
+  - W
+  - F
+  - P
+  - G
+  - {t: '$$mdi:transfer$$', type: trans}
+  - J
+  - L
+  - U
+  - Y
+  - {t: ;, s: ':'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: A, h: left_navi}
+  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
+  - D
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - H
+  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: O, h: right_navi}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - K
+  - M
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
@@ -346,9 +395,9 @@ layers:
 combos:
 - p: [17, 32]
   k: Ctl+V
-  l: [QWERTY]
+  l: [NUMBER]
 - p: [24, 25]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY]
+  l: [NUMBER]
 - p: [15, 16]
   k: Gui+$$mdi:keyboard-space$$
