@@ -395,9 +395,7 @@ layers:
 combos:
 - p: [17, 32]
   k: Ctl+V
-  l: [NUMBER]
+  l: [QWERTY, COLEMAK]
 - p: [24, 25]
   k: $$mdi:apple-keyboard-option$$
-  l: [NUMBER]
-- p: [15, 16]
-  k: Gui+$$mdi:keyboard-space$$
+  l: [QWERTY, COLEMAK]
