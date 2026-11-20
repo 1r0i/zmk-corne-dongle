@@ -105,18 +105,13 @@
         ctrl+v {
             bindings = <&kp LC(V)>;
             key-positions = <17 32>;
-            layers = <2>;
+            layers = <0 1>;
         };
 
         hangul {
             bindings = <&kp RALT>;
             key-positions = <24 25>;
-            layers = <2>;
-        };
-
-        win+space {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <15 16>;
+            layers = <0 1>;
         };
     };
 
