@@ -109,15 +109,24 @@
         };
 
         hangul {
-            bindings = <&kp RALT>;
+            bindings = <&colemak_hangul>;
             key-positions = <24 25>;
             layers = <0 1>;
         };
 
-        colemak {
-            bindings = <&tog 1>;
+        hangul1 {
+            bindings = <&kp RALT>;
             key-positions = <16 15>;
             layers = <0 1>;
+        };
+    };
+
+    macros {
+        colemak_hangul: colemak_hangul {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&tog 1 &kp RALT>;
+            label = "COLEMAK_HANGUL";
         };
     };
 
