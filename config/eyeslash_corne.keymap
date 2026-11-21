@@ -109,13 +109,13 @@
         };
 
         hangul {
-            bindings = <&colemak_hangul>;
+            bindings = <&kp RALT>;
             key-positions = <24 25>;
             layers = <0 1>;
         };
 
-        hangul1 {
-            bindings = <&kp RALT>;
+        colemak {
+            bindings = <&tog 1>;
             key-positions = <16 15>;
             layers = <0 1>;
         };
