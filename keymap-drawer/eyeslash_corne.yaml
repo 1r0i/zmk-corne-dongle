@@ -163,7 +163,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
-  - Sft+P
+  - ':'
   - +
   - {t: '-', s: _}
   - '&'
@@ -173,7 +173,7 @@ layers:
   - '#'
   - (
   - )
-  - P
+  - {t: ;, s: ':'}
   - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -292,7 +292,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
   - $$mdi:keyboard-esc$$
   Fn:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -346,9 +346,9 @@ layers:
   alt_tab:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Z
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-up-bold$$
-  - Ctl+Sft+Z
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -374,9 +374,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
