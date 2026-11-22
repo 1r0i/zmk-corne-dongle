@@ -195,7 +195,7 @@
 &trans  &trans  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CAPSLOCK                    &trans          &kp PAGE_UP    &kp HOME        &kp UP_ARROW    &kp END          &trans  &bootloader
 &trans  &trans  &kp LALT         &kp LSHIFT      &kp LCTRL        &trans                  &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &trans  &kp RALT         &kp RSHIFT      &kp RCTRL        &trans        &trans            &trans          &kp INSERT     &kp DELETE      &kp BACKSPACE   &kp K_MENU       &trans  &sys_reset
-                                 &trans          &trans           &trans                                          &kp TAB        &trans          &kp ESCAPE
+                                 &trans          &trans           &trans                                          &kp TAB        &kp SPACE       &kp ESCAPE
             >;
         };
 
@@ -213,23 +213,11 @@
 
         alt_tab {
             bindings = <
-&trans  &trans  &kp LC(Z)       &kp UP_ARROW    &kp LC(LS(Z))  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &swap          &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LC(X)       &kp LC(C)       &kp LC(V)      &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans          &trans         &trans                                    &trans  &trans  &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &swap   &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans          &trans          &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                &trans          &trans  &trans                                    &trans  &trans  &trans
             >;
-        };
-
-        symbol_colemak {
-            display-name = "SYMBOL";
-            bindings = <
-&trans  &kp SLASH        &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL          &kp PIPE                         &trans          &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH  &trans
-&trans  &kp EXCLAMATION  &kp LS(P)      &kp PLUS          &kp MINUS          &kp AMPERSAND            &trans  &trans  &trans  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp P             &kp QUESTION   &trans
-&trans  &kp TILDE        &kp ASTERISK   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &trans            &trans          &kp AT_SIGN  &kp UNDERSCORE        &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp GRAVE      &trans
-                                        &trans            &trans             &mo 7                                            &mo 7        &trans                &trans
-            >;
-
-            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
     };
 };
