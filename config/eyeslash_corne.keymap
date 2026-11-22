@@ -163,7 +163,7 @@
 &trans  &kp F1  &kp F2              &kp F3                &kp F4               &kp F5                     &trans          &kp SLASH  &kp MINUS            &kp PLUS              &kp ASTERISK        &kp EQUAL  &trans
 &trans  &kp N1  &HRM LALT NUMBER_2  &HRM LSHIFT NUMBER_3  &HRM LCTRL NUMBER_4  &kp N5             &trans  &trans  &trans  &kp N6     &HRM LCTRL NUMBER_7  &HRM LSHIFT NUMBER_8  &HRM LALT NUMBER_9  &kp N0     &trans
 &trans  &kp F6  &kp F7              &kp F8                &kp F9               &kp F10  &trans            &trans          &kp F11    &kp F12              &trans                &trans              &trans     &trans
-                                    &trans                &trans               &mo 7                                      &mo 7      &trans               &trans
+                                    &trans                &trans               &mo 6                                      &mo 6      &trans               &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -175,7 +175,7 @@
 &trans  &kp SLASH        &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL          &kp PIPE                         &trans          &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR        &kp BACKSLASH  &trans
 &trans  &kp EXCLAMATION  &kp COLON      &kp PLUS          &kp MINUS          &kp AMPERSAND            &trans  &trans  &trans  &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp QUESTION   &trans
 &trans  &kp TILDE        &kp ASTERISK   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &trans            &trans          &kp AT_SIGN  &kp UNDERSCORE        &kp DOUBLE_QUOTES      &kp SINGLE_QUOTE  &kp GRAVE      &trans
-                                        &trans            &trans             &mo 7                                            &mo 7        &trans                &trans
+                                        &trans            &trans             &mo 6                                            &mo 6        &trans                &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
